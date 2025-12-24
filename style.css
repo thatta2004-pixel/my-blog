@@ -1,0 +1,97 @@
+body {
+    background: radial-gradient(circle at top, #1b1026, #0b0613);
+    font-family: 'Playfair Display', serif;
+    color: #e6dff1;
+    margin: 0;
+}
+
+
+header {
+    background-color: rgba(20, 10, 30, 0.9);
+    padding: 35px;
+    text-align: center;
+    border-bottom: 1px solid #3b1f5c;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #caa7ff;
+    letter-spacing: 2px;
+}
+
+header p {
+    color: #b9a6d3;
+    font-style: italic;
+}
+
+main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(30, 15, 45, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(150, 90, 255, 0.15);
+}
+
+.post {
+    margin-bottom: 50px;
+}
+
+.post h2 {
+    color: #d6b8ff;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(150, 90, 255, 0.3);
+}
+
+.post small {
+    color: #a58bd6;
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    color: #9a86b8;
+}
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(25, 12, 40, 0.9);
+}
+
+nav a {
+    color: #caa7ff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.post {
+    animation: aparecer 0.8s ease-in;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
